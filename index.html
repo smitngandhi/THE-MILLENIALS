@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .Back{
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+            }
+            .myVideo{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .Yo{
+                display: flex;
+                justify-content: space-around;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100px;
+                height: 100px;
+                display: inline;
+            }
+            .Header1{
+                background-color: white;
+                color: Black;
+                width:auto;
+                height:auto;
+            }
+            source{
+                height: auto;
+                width: auto;
+            }
+            #Test:hover{
+                transition: all 2s ease-in;
+                transform: rotate(90deg);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="Header1">
+               
+                <div class="yo">
+                    <img src="icon.png" alt="Yo" >
+                </div>
+            </div>
+        </header>
+        <main>
+<div class="Back">
+    <video autoplay muted loop class="myVideo">
+  <source src="video.mp4" type="video/mp4">
+</video>
+</div>
+<div class="Yo">
+     <img src="icon.png" alt="Yo" id="imgr">
+</div>
+<div class="Yo">
+    <img src="icon.png" alt="Yo" id="imgs">
+</div>
+<div class="Yo" >
+    <a href="/"id="Test" >
+        <img src="icon.png" alt="Image" id="imgt">
+    </a>
+    </div>
+        </main>
+    </body>
+</html>

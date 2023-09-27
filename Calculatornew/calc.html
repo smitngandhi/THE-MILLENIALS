@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: auto;
+        }
+        .Division
+        {
+            display: grid;
+            place-items: center;
+            width: 234px;
+        }
+        #delbtn{
+            height: 10px;
+            width: 10px;
+        }
+        #op{
+            /* border-radius: 4px; */
+        width:35px;
+        background-color: aliceblue;
+        text-align: center;
+        }
+        #Mytextbox{
+            outline-width: 0;
+            width:95%;
+            margin-right: 0px;
+        }
+        table,th,td{
+            background-color:black;
+            border: 1px solid white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Division">
+    <table id="tb">
+        <tr>
+            <td colspan="5"><input type="text" id="Mytextbox"></td>
+            <td><button id="op" onclick="del()"><img src="delete-315.png" alt="Del" id="delbtn"></button></td>
+        </tr>
+            <tr>
+                <td><button id="op" onclick="clr()">C</button></td>
+                <td><button id="op" onclick="btn('(')">(</button></td>
+                <td><button id="op" onclick="btn(')')">)</button></td>
+                <td><button id="op" onclick="sign()">+/-</button></td>
+                <td><button id="op" onclick="percentage()">%</button></td>
+                <td><button id="op" onclick="btn('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="op" onclick="sin()">sin</button></td>
+                <td><button id="op" onclick="Pi()">&Pi;</button></td>
+                <td><button id="op" onclick="btn(1)">1</button>
+                <td><button id="op" onclick="btn('2')">2</button></td>
+                <td><button id="op" onclick="btn('3')">3</button></td>
+                <td><button id="op" onclick="btn('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="op" onclick="cos()">cos</button></td>
+                <td><button id="op" onclick="root()">√x</button></td>
+                <td><button id="op" onclick="btn('4')">4</button></td>
+                <td><button id="op" onclick="btn('5')">5</button></td>
+                <td><button id="op" onclick="btn('6')">6</button></td>
+                <td><button id="op" onclick="btn('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="op" onclick="tan()">tan</button></td>
+                <td><button id="op" onclick="square()">x²</button></td>
+                <td><button id="op" onclick="btn('7')">7</button></td>
+                <td><button id="op" onclick="btn('8')">8</button></td>
+                <td><button id="op" onclick="btn('9')">9</button></td>
+                <td><button id="op" onclick="btn('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="op" onclick="log10()">log</button></td>
+                <td><button id="op" onclick="loge()">ln</button></td>
+                <td><button id="op" onclick="btn('0')">0</button></td>
+                <td><button id="op" onclick="reciprocal()">1/x</button></td>
+                <td><button id="op" onclick="btn('.')">.</button></td>
+                <td><button id="op" onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

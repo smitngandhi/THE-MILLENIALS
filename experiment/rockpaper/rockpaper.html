@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RPS.css">
+    <script src="RPS.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>THE ROCK PAPER AND SCISSORS</h1>
+    </header>
+    <main>
+        <div class="column">
+            <div class="row_head">
+                <h2>User</h2>
+            </div>
+            <div class="row_head">
+                <h2>computer</h2>
+            </div>
+        </div>
+        <section class="images">
+            <div class="cols">
+                <div class="column">
+                    <div class="row" ><button class="selection" onclick="check()"><img
+                                src="R1 (2).png" alt="FIRST" id="user_phase"></button></div>
+                    </div>
+                <div class="column">
+                    <div class="row" ><button class="selection" onclick="check()"><img src="R1.png"
+                                alt="FIRST" id="computer_phase"></button></div>        
+                </div>
+            </div>
+        </section>
+        
+        <p class="game">PLEASE SELECT ANY ONE OF THEM</p>
+        <div class="select">
+            <div class="column">
+                <div class="row"><button class="selection" data-selection="3" onclick="check()"><img
+                            src="scissors.jpg" alt="THIRD" class="Img"></button></div>
+                <div class="row"><button class="selection" data-selection="2" onclick="check()"><img
+                            src="paper.jpg" alt="SECOND" class="Img"></button></div>
+
+                <div class="row"><button class="selection" data-selection="1" onclick="check()"><img
+                            src="rock.jpg" alt="FIRST" class="Img"></button></div>
+            </div>
+        </div>
+        <div class="S">
+            <div class="score" id="S1">
+                <p><span>User's Score </span></p>
+                <span>
+                    <p id="User"></p>
+                </span>
+            </div>
+
+            <div class="score" id="S2">
+                <p><span>Computer's Score </span></p>
+                <span>
+                    <p id="computer"></p>
+                </span>
+            </div>
+        </div>
+        <div>
+<p  id="result"></p>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

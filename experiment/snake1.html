@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Millennials</title>
+    <link rel="stylesheet" href="snake1.css">
+    <script src="snake1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@300;500&family=Poppins&family=Raleway:wght@700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="hungrysnakegame">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <h2><a href="#">THE MILLENNIALS</a></h2>
+                </div>
+                <nav>
+                    <ul>
+                        <input type="search" list="search keyword" id="searching" placeholder="Search the joy..">
+                        <datalist id="search keyword">
+                            <option value="Rock Paper Scissors">
+                            <option value="Tic Tac Toe">
+                            <option value="Guess the Numbers">
+                            <option value="Hungry Snake">
+                            <option value="Dots and Box">
+                            <option value="Hangman">    
+                        </datalist>
+                        <li class="active"><a href="hungrysnake.html">Games</a></li>
+                        <li><a href="#">Suggestions</a></li>
+                        <li><a href="hungrysnake.html">Back</a></li>
+                        <li><a href="rockpaperscissor.html">Next</a></li>
+                        <li class="btn"><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="box">
+                <!-- <div><p id="score">Your score: </p></div> -->
+                <canvas id="board"></canvas>
+                <div id="Buttons">
+                    <button onclick="btn('left')">&#8592;</button>
+                    <button onclick="btn('up')">&#8593;</button>
+                    <button onclick="btn('right')">&#8594;</button>
+                    <button onclick="btn('down')">&#8595;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
